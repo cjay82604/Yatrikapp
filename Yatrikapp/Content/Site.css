@@ -1,0 +1,21 @@
+/* ==========================================================
+   YATRIK - MASTER STYLESHEET
+   Modular CSS Architecture (Split by Page & Feature)
+   ========================================================== */
+
+/* 1. Global Core: Typography, Palette, Reset, Header, Navbar, Dropdown, Footer */
+@import url('css/common.css');
+
+/* 2. Page-Specific Stylesheets */
+@import url('css/home.css');
+@import url('css/hotels.css');
+@import url('css/hotel-details.css');
+@import url('css/booking.css');
+@import url('css/trips.css');
+@import url('css/reviews.css');
+@import url('css/saved.css');
+@import url('css/about.css');
+@import url('css/contact.css');
+@import url('css/profile.css');
+@import url('css/auth.css');
+@import url('css/admin.css');

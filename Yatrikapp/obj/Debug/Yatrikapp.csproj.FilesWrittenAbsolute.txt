@@ -1,0 +1,15 @@
+/Users/jayraj/Yatrikapp/Yatrikapp/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttribute.cs
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Yatrikapp.pdb
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Yatrikapp.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/obj/Debug/Yatrikapp.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/obj/Debug/Yatrikapp.pdb
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Microsoft.Web.Infrastructure.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Microsoft.ScriptManager.MSAjax.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Microsoft.ScriptManager.WebForms.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/System.Web.Optimization.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Newtonsoft.Json.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/WebGrease.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Antlr3.Runtime.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Microsoft.AspNet.Web.Optimization.WebForms.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Microsoft.AspNet.FriendlyUrls.dll
+/Users/jayraj/Yatrikapp/Yatrikapp/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll

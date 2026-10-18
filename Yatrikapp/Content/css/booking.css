@@ -1,0 +1,319 @@
+﻿/* ==========================================================
+   YATRIK - BOOKING / CHECKOUT PAGE STYLES
+   ========================================================== */
+.yt-booking-page {
+    background-color: var(--bg-page);
+    padding: 24px 0 60px 0;
+}
+
+.yt-booking-container {
+    max-width: 1080px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+/* 2-Column Booking Layout */
+.yt-checkout-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 36px;
+    align-items: start;
+}
+
+.yt-booking-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.yt-booking-main-sub {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* Step Indicator (1 Guest details — 2 Payment option) */
+.yt-steps-indicator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0 24px 0;
+    font-size: 0.8rem;
+}
+
+.yt-step-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yt-step-badge {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.yt-step-badge.active {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+}
+
+.yt-step-badge.inactive {
+    background-color: #EAE3D9;
+    color: #8C7D73;
+}
+
+.yt-step-text.active {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.yt-step-text.inactive {
+    color: var(--text-muted);
+}
+
+.yt-step-dash {
+    color: #C0B5A8;
+}
+
+/* Form Inputs */
+.yt-form-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.yt-input-field {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #E5DDD5;
+    background-color: #FFFFFF;
+    padding: 0 14px;
+    font-size: 0.82rem;
+    color: var(--text-primary);
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.yt-input-field:focus {
+    border-color: var(--brand-terracotta);
+}
+
+.yt-textarea-field {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #E5DDD5;
+    background-color: #FFFFFF;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: var(--text-primary);
+    outline: none;
+    font-family: inherit;
+    resize: none;
+    transition: border-color 0.2s;
+}
+
+.yt-textarea-field:focus {
+    border-color: var(--brand-terracotta);
+}
+
+/* Right Summary Card */
+.yt-summary-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+}
+
+.yt-summary-img-box {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.yt-summary-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yt-summary-body {
+    padding: 18px;
+}
+
+.yt-summary-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.yt-summary-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.yt-summary-loc {
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.yt-summary-pricing {
+    border-top: 1px solid #F0EAE0;
+    padding-top: 12px;
+}
+
+.yt-summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: #554438;
+    margin-bottom: 6px;
+}
+
+.yt-summary-row.total {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #F0EAE0;
+}
+
+@media (max-width: 900px) {
+    .yt-checkout-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================
+   YATRIK - BOOKING STEP 2 (PAYMENT OPTION) STYLES
+   ========================================================== */
+
+/* Completed Step Badge (Muted Forest Green with Checkmark) */
+.yt-step-badge.completed {
+    background-color: #557A64;
+    color: #FFFFFF;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+/* Payment Option Card */
+.yt-payment-card {
+    border: 1.5px solid var(--brand-terracotta);
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(180, 104, 41, 0.04);
+}
+
+.yt-radio-custom {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--brand-terracotta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.yt-radio-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--brand-terracotta);
+}
+
+.yt-payment-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.yt-payment-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+}
+
+/* Green Notice Box */
+.yt-info-notice {
+    background-color: #EBF9F1;
+    border: 1px solid #D2F2E1;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.78rem;
+    color: #237844;
+    margin-bottom: 24px;
+    line-height: 1.45;
+}
+
+/* Actions Row: Back Button + Confirm Booking Button */
+.yt-actions-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.yt-btn-pill-back {
+    border: 1px solid #E5DDD5;
+    background-color: #FFFFFF;
+    color: #554438;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    height: 42px;
+}
+
+.yt-btn-pill-back:hover {
+    border-color: #C5B8AC;
+    color: var(--text-primary);
+}
+
+.yt-btn-pill-confirm {
+    flex: 1;
+    height: 42px;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.yt-btn-pill-confirm:hover {
+    background-color: #9F541B;
+}

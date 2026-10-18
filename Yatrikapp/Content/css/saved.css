@@ -1,0 +1,59 @@
+﻿/* ==========================================================
+   YATRIK - SAVED / WISHLIST PAGE STYLES
+   ========================================================== */
+
+/* Active Saved Nav Pill (Screenshot) */
+.yt-nav-saved.active {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF !important;
+    padding: 5px 14px;
+    border-radius: 9999px;
+    font-weight: 600;
+}
+
+.yt-wishlist-page {
+    background-color: var(--bg-page);
+    padding: 24px 0 70px 0;
+    min-height: calc(100vh - 120px);
+}
+
+.yt-wishlist-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.yt-wishlist-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.yt-wishlist-count {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* 2-Column Grid of Wishlist Hotel Cards */
+.yt-wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.yt-no-saved {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+    .yt-wishlist-grid {
+        grid-template-columns: 1fr;
+    }
+}

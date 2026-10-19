@@ -1,0 +1,284 @@
+﻿/* ==========================================================
+   YATRIK - PROFILE PAGE STYLES
+   ========================================================== */
+.yt-profile-page {
+    background-color: var(--bg-page);
+    min-height: calc(100vh - 420px);
+    padding: 40px 0 80px 0;
+}
+
+.yt-profile-container {
+    max-width: 580px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+/* User Header Banner */
+.yt-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.yt-profile-avatar {
+    width: 56px;
+    height: 56px;
+    background-color: var(--brand-terracotta);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 1.15rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.yt-profile-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-profile-header-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 2px 0;
+}
+
+.yt-profile-header-email {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* 3 Stats Grid */
+.yt-profile-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.25fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.yt-profile-stat-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 16px 12px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(44, 26, 14, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.yt-profile-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 26, 14, 0.06);
+}
+
+.yt-profile-stat-val {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.yt-profile-stat-icon {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.yt-profile-stat-lbl {
+    font-size: 0.74rem;
+    color: var(--text-muted);
+}
+
+/* Details Card */
+.yt-profile-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 18px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 16px rgba(44, 26, 14, 0.03);
+}
+
+.yt-profile-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+}
+
+.yt-profile-card-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.yt-profile-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Buttons */
+.yt-profile-btn-edit {
+    background-color: #FAF7F2;
+    border: 1px solid #E5DCD0;
+    border-radius: 9999px;
+    padding: 5px 18px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.yt-profile-btn-edit:hover {
+    border-color: var(--brand-terracotta);
+    color: var(--brand-terracotta);
+    background-color: #FFFFFF;
+}
+
+.yt-profile-btn-save {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.yt-profile-btn-save:hover {
+    background-color: #9F541B;
+}
+
+.yt-profile-btn-cancel {
+    background-color: #FAF7F2;
+    border: 1px solid #E5DCD0;
+    border-radius: 9999px;
+    padding: 6px 18px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.yt-profile-btn-cancel:hover {
+    background-color: #EFE8DE;
+}
+
+/* Key-Value View Rows */
+.yt-profile-view-row {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #F5EFEB;
+    font-size: 0.84rem;
+}
+
+.yt-profile-view-row:last-child {
+    border-bottom: none;
+}
+
+.yt-profile-lbl {
+    width: 140px;
+    color: var(--text-muted);
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.yt-profile-val {
+    color: var(--text-primary);
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+/* Edit Form Rows */
+.yt-profile-edit-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #F5EFEB;
+    font-size: 0.84rem;
+}
+
+.yt-profile-edit-row:last-child {
+    border-bottom: none;
+}
+
+.yt-profile-edit-input {
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #E5DDD5;
+    background-color: #FFFFFF;
+    padding: 0 12px;
+    font-size: 0.84rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.yt-profile-edit-input:focus {
+    border-color: var(--brand-terracotta);
+}
+
+.yt-profile-msg {
+    margin-top: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.yt-profile-msg.success {
+    background-color: #EBF9F1;
+    color: #237844;
+    border: 1px solid #D2F2E1;
+}
+
+.yt-profile-msg.error {
+    background-color: #FDF2F2;
+    color: #E03131;
+    border: 1px solid #F8D7DA;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .yt-profile-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .yt-profile-card {
+        padding: 20px 16px;
+    }
+
+    .yt-profile-view-row,
+    .yt-profile-edit-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .yt-profile-lbl {
+        width: 100%;
+    }
+}

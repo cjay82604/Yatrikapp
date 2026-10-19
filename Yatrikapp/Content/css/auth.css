@@ -1,0 +1,260 @@
+﻿/* ==========================================================
+   YATRIK - AUTH / REGISTER PAGE STYLES
+   ========================================================== */
+
+/* Focused Auth Header */
+.yt-auth-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F0EAE0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.yt-auth-header-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yt-back-home {
+    font-size: 0.82rem;
+    color: #554438;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+.yt-back-home:hover {
+    color: var(--brand-terracotta);
+}
+
+/* Auth Page Wrapper */
+.yt-auth-wrapper {
+    min-height: calc(100vh - 56px);
+    background-color: var(--bg-page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px 60px 16px;
+}
+
+/* Top Badge & Titles */
+.yt-auth-header-section {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.yt-auth-avatar {
+    width: 44px;
+    height: 44px;
+    background-color: var(--brand-terracotta);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.yt-auth-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.yt-auth-subtitle {
+    color: var(--text-muted);
+    font-size: 0.84rem;
+    font-weight: 400;
+}
+
+/* Auth Card Box */
+.yt-auth-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    padding: 26px 26px 22px 26px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+}
+
+/* Form Groups & Inputs */
+.yt-form-group {
+    margin-bottom: 14px;
+}
+
+.yt-form-label {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.yt-req {
+    color: #E03131;
+    font-size: 0.75rem;
+    margin-left: 2px;
+}
+
+.yt-input-pill {
+    width: 100%;
+    height: 40px;
+    border-radius: 9999px;
+    border: 1px solid #E5DDD5;
+    background-color: #FFFFFF;
+    padding: 0 16px;
+    font-size: 0.82rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.yt-input-pill::placeholder {
+    color: #B4A79D;
+    font-size: 0.8rem;
+}
+
+.yt-input-pill:focus {
+    border-color: var(--brand-terracotta);
+    box-shadow: 0 0 0 3px rgba(180, 104, 41, 0.12);
+}
+
+/* Checkbox Section */
+.yt-terms-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 16px 0 18px 0;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.yt-terms-group input[type="checkbox"] {
+    accent-color: var(--brand-terracotta);
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.yt-link-accent {
+    color: var(--brand-terracotta);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.yt-link-accent:hover {
+    text-decoration: underline;
+}
+
+/* Primary Button */
+.yt-btn-pill-block {
+    width: 100%;
+    height: 42px;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+    margin-bottom: 16px;
+}
+
+.yt-btn-pill-block:hover {
+    background-color: #9F541B;
+}
+
+/* Bottom Sign In Link inside Card */
+.yt-auth-footer-text {
+    text-align: center;
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+/* Validation Feedback */
+.yt-val-error {
+    color: #D32F2F;
+    font-size: 0.7rem;
+    margin-top: 3px;
+    display: block;
+    padding-left: 6px;
+}
+
+.yt-alert {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.yt-alert-success {
+    background-color: #EBFBEE;
+    color: #2B8A3E;
+    border: 1px solid #D3F9D8;
+}
+
+.yt-alert-danger {
+    background-color: #FFF5F5;
+    color: #C92A2A;
+    border: 1px solid #FFE3E3;
+}
+
+/* ==========================================================
+   YATRIK - LOGIN PAGE SPECIFIC STYLES
+   ========================================================== */
+.yt-label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.yt-link-forgot {
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.yt-link-forgot:hover {
+    color: var(--brand-terracotta);
+    text-decoration: underline;
+}
+
+.yt-auth-divider-line {
+    border: none;
+    border-top: 1px solid #F0EAE0;
+    margin: 18px 0 14px 0;
+}
+
+.yt-admin-portal-link {
+    display: block;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #554438;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.yt-admin-portal-link:hover {
+    color: var(--brand-terracotta);
+}

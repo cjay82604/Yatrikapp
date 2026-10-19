@@ -1,0 +1,299 @@
+﻿/* ==========================================================
+   YATRIK - ABOUT US PAGE STYLES
+   ========================================================== */
+
+/* Hero Banner */
+.yt-about-hero {
+    position: relative;
+    height: 220px;
+    background: url('https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.yt-about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(44, 26, 14, 0.5), rgba(44, 26, 14, 0.7));
+}
+
+.yt-about-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.yt-about-hero-tag {
+    color: #FAF7F2;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.yt-about-hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Page Container */
+.yt-about-page {
+    background-color: var(--bg-page);
+    padding: 48px 0 80px 0;
+}
+
+.yt-about-container {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section: Our Mission */
+.yt-mission-section {
+    text-align: center;
+    max-width: 660px;
+    margin: 0 auto 36px auto;
+}
+
+.yt-mission-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 6px 0 14px 0;
+}
+
+.yt-mission-desc {
+    color: #554438;
+    font-size: 0.85rem;
+    line-height: 1.65;
+}
+
+/* 4-Stat Metric Cards */
+.yt-about-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 56px;
+}
+
+.yt-about-stat-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 18px 14px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.yt-about-stat-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--brand-terracotta);
+    margin-bottom: 2px;
+}
+
+.yt-about-stat-lbl {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+/* Section: How It Started (2 Columns) */
+.yt-about-story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.yt-about-story-img-box {
+    width: 100%;
+    height: 280px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.yt-about-story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yt-about-story-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+}
+
+.yt-about-story-p {
+    font-size: 0.82rem;
+    color: #554438;
+    line-height: 1.65;
+    margin-bottom: 12px;
+}
+
+/* Section: What We Stand For */
+.yt-about-stand-section {
+    margin-bottom: 60px;
+}
+
+.yt-about-sec-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.yt-about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.yt-about-value-card {
+    background-color: #FAF7F2;
+    border: 1px solid #ECE4DA;
+    border-radius: 12px;
+    padding: 22px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.yt-about-val-icon {
+    color: var(--brand-terracotta);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.yt-about-val-title {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.yt-about-val-desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+/* Section: Meet The Team */
+.yt-about-team-section {
+    margin-bottom: 50px;
+}
+
+.yt-about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.yt-about-member-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 26px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.yt-about-avatar-box {
+    width: 48px;
+    height: 48px;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 auto 12px auto;
+}
+
+.yt-about-member-name {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.yt-about-member-role {
+    font-size: 0.72rem;
+    color: var(--brand-terracotta);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.yt-about-member-bio {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Section: Ready To Explore CTA Banner */
+.yt-about-cta-banner {
+    background-color: var(--bg-dark);
+    border-radius: 16px;
+    padding: 42px 20px;
+    text-align: center;
+}
+
+.yt-about-cta-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FAF7F2;
+    margin-bottom: 6px;
+}
+
+.yt-about-cta-sub {
+    color: var(--text-footer-muted);
+    font-size: 0.82rem;
+    margin-bottom: 22px;
+}
+
+.yt-btn-browse-hotels {
+    display: inline-block;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF !important;
+    padding: 10px 28px;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.yt-btn-browse-hotels:hover {
+    background-color: #9F541B;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .yt-about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .yt-about-story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .yt-about-values-grid,
+    .yt-about-team-grid {
+        grid-template-columns: 1fr;
+    }
+}

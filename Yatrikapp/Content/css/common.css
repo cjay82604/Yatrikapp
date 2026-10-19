@@ -1,0 +1,360 @@
+﻿/* ==========================================================
+   YATRIK - PIXEL-PERFECT THEME STYLES
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --brand-terracotta: #B46829;
+    --brand-peach: #E79F69;
+    --bg-page: #FAF7F2;
+    --bg-filter: #F0EAE0;
+    --bg-dark: #2C1A0E;
+    --bg-dark-card: #311F12;
+    --border-dark-card: #432E20;
+    --text-primary: #2C1A0E;
+    --text-muted: #7B6E65;
+    --text-footer-muted: #A6978C;
+    --border-light: #E7DFD5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- HEADER / NAVBAR --- */
+.yt-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F0EAE0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.yt-nav-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yt-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.yt-logo-badge {
+    width: 26px;
+    height: 26px;
+    background-color: var(--brand-terracotta);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.yt-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.yt-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.yt-nav-item {
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #554438;
+    padding: 5px 14px;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+}
+
+.yt-nav-item.active {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF !important;
+}
+
+.yt-nav-item:hover:not(.active) {
+    color: var(--brand-terracotta);
+}
+
+.yt-nav-divider {
+    color: #DDD4CA;
+    font-size: 0.85rem;
+    margin: 0 4px;
+}
+
+.yt-auth-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.yt-btn-signin {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 6px 8px;
+}
+
+.yt-btn-register {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF !important;
+    font-size: 0.84rem;
+    font-weight: 600;
+    padding: 6px 18px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.yt-btn-register:hover {
+    opacity: 0.92;
+}
+
+.yt-btn-admin {
+    background-color: #FAF7F2;
+    border: 1px solid #E5DDD5;
+    color: #554438;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 9999px;
+}
+
+
+/* ==========================================================
+   YATRIK - LOGGED-IN NAVBAR & USER DROPDOWN
+   ========================================================== */
+.yt-nav-saved {
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #554438;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.yt-nav-saved:hover {
+    color: var(--brand-terracotta);
+}
+
+.yt-user-menu-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.yt-user-avatar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+.yt-avatar-circle {
+    width: 32px;
+    height: 32px;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.yt-avatar-arrow {
+    font-size: 0.65rem;
+    color: #554438;
+}
+
+/* Dropdown Menu Box */
+.yt-user-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    width: 220px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    padding: 14px 0 10px 0;
+    z-index: 1002;
+    text-align: left;
+}
+
+.yt-user-dropdown.show {
+    display: block;
+}
+
+.yt-dropdown-userinfo {
+    padding: 0 18px 10px 18px;
+}
+
+.yt-dropdown-name {
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.yt-dropdown-email {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.yt-dropdown-divider {
+    border: none;
+    border-top: 1px solid #F0EAE0;
+    margin: 6px 0;
+}
+
+.yt-dropdown-item {
+    display: block;
+    padding: 7px 18px;
+    font-size: 0.82rem;
+    color: #4A3B30;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.yt-dropdown-item:hover {
+    background-color: #FAF7F2;
+    color: var(--brand-terracotta);
+}
+
+.yt-dropdown-item.yt-signout {
+    color: var(--brand-terracotta);
+    font-weight: 600;
+}
+
+
+/* --- CREAM STRIP DIVIDER --- */
+.yt-divider-strip {
+    background-color: var(--bg-page);
+    height: 22px;
+}
+
+/* --- FOOTER --- */
+.yt-footer {
+    background-color: var(--bg-dark);
+    padding: 40px 20px 20px 20px;
+    color: var(--text-footer-muted);
+}
+
+.yt-footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.yt-footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.yt-footer-brand .yt-logo {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.yt-footer-brand-desc {
+    font-size: 0.78rem;
+    line-height: 1.55;
+    max-width: 250px;
+}
+
+.yt-footer-col-title {
+    color: #7B6B60;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.yt-footer-links {
+    list-style: none;
+}
+
+.yt-footer-links li {
+    margin-bottom: 7px;
+}
+
+.yt-footer-links a {
+    color: var(--text-footer-muted);
+    font-size: 0.78rem;
+    transition: color 0.2s;
+}
+
+.yt-footer-links a:hover {
+    color: #FFFFFF;
+}
+
+.yt-footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #362215;
+    padding-top: 18px;
+    font-size: 0.72rem;
+    color: #6C5D53;
+}
+
+
+@media (max-width: 900px) {
+    .yt-footer-top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

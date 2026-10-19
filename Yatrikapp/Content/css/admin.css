@@ -1,0 +1,951 @@
+﻿/* ==========================================================
+   YATRIK - ADMIN LOGIN & PORTAL STYLES
+   ========================================================== */
+.yt-admin-page-body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    /* #2C1A0E */
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #FAF7F2;
+}
+
+/* Header */
+.yt-admin-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECE4DA;
+    padding: 16px 48px;
+}
+
+.yt-admin-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yt-admin-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.yt-admin-brand-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yt-admin-brand-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2C1A0E;
+}
+
+.yt-admin-back {
+    color: #554438;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.yt-admin-back:hover {
+    color: var(--brand-terracotta);
+}
+
+/* Main Auth Area */
+.yt-admin-main {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #2C1A0E;
+    box-sizing: border-box;
+}
+
+.yt-admin-box {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.yt-admin-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+}
+
+.yt-admin-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #A89689;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.yt-admin-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #FAF7F2;
+    margin: 0 0 6px 0;
+}
+
+.yt-admin-subtitle {
+    font-size: 0.82rem;
+    color: #8E7E72;
+    margin: 0 0 24px 0;
+}
+
+/* Form Card */
+.yt-admin-card {
+    background-color: #382417;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.yt-admin-label {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: #C5B8AC;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.yt-admin-label .yt-req {
+    color: #E03131;
+}
+
+.yt-admin-input {
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid #4D3322;
+    background-color: #24140A;
+    color: #FAF7F2;
+    padding: 0 14px;
+    font-size: 0.84rem;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.yt-admin-input:focus {
+    border-color: var(--brand-terracotta);
+}
+
+.yt-admin-input::placeholder {
+    color: #6A584C;
+}
+
+.yt-admin-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.yt-admin-forgot {
+    color: #C48248;
+    font-size: 0.74rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.yt-admin-forgot:hover {
+    color: #E79F69;
+}
+
+/* Helper Box */
+.yt-admin-demo-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 18px 0;
+    font-size: 0.74rem;
+    color: #8E7E72;
+}
+
+/* Error message */
+.yt-admin-error {
+    display: block;
+    background-color: rgba(224, 49, 49, 0.15);
+    border: 1px solid rgba(224, 49, 49, 0.3);
+    color: #FFA8A8;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.78rem;
+    margin-bottom: 16px;
+}
+
+/* Button */
+.yt-admin-btn-submit {
+    width: 100%;
+    height: 44px;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.yt-admin-btn-submit:hover {
+    background-color: #9F541B;
+}
+
+/* Footer / Switch link */
+.yt-admin-switch-row {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.76rem;
+    color: #8E7E72;
+}
+
+.yt-admin-switch-link {
+    color: #C48248;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 4px;
+    transition: color 0.2s;
+}
+
+.yt-admin-switch-link:hover {
+    color: #E79F69;
+}
+
+@media (max-width: 600px) {
+    .yt-admin-header {
+        padding: 14px 20px;
+    }
+
+    .yt-admin-card {
+        padding: 24px 18px;
+    }
+}
+
+
+/* ==========================================================
+   YATRIK - ADMIN DASHBOARD STYLES
+   ========================================================== */
+.yt-dash-page {
+    background-color: var(--bg-page);
+    /* #FAF7F2 */
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+/* Admin Dashboard Header */
+.yt-dash-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECE4DA;
+    padding: 0 40px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.yt-dash-header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yt-dash-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.yt-dash-brand-badge {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yt-dash-brand-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.yt-dash-nav-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.yt-dash-nav-link {
+    color: #554438;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    transition: all 0.2s;
+}
+
+.yt-dash-nav-link:hover {
+    color: var(--brand-terracotta);
+}
+
+.yt-dash-nav-link.active {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF !important;
+    font-weight: 600;
+    padding: 6px 18px;
+}
+
+.yt-dash-divider {
+    color: #D5CBC0;
+    margin: 0 8px;
+    font-size: 0.85rem;
+}
+
+/* User Menu */
+.yt-dash-user-menu {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.yt-dash-user-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 4px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.yt-dash-user-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yt-dash-user-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(44, 26, 14, 0.08);
+    min-width: 170px;
+    padding: 8px 0;
+    display: none;
+    z-index: 100;
+}
+
+.yt-dash-user-dropdown.show {
+    display: block;
+}
+
+.yt-dash-dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.yt-dash-dropdown-item:hover {
+    background-color: #FAF7F2;
+    color: var(--brand-terracotta);
+}
+
+/* Main Dashboard Container */
+.yt-dash-container {
+    max-width: 1200px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 36px 0 80px 0;
+}
+
+.yt-dash-title-section {
+    margin-bottom: 24px;
+}
+
+.yt-dash-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 4px 0;
+}
+
+.yt-dash-subheading {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* 4 Metric Cards Grid */
+.yt-dash-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.yt-dash-metric-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 20px 22px;
+    box-shadow: 0 2px 8px rgba(44, 26, 14, 0.02);
+}
+
+.yt-dash-metric-icon {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.yt-dash-metric-num {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.yt-dash-metric-lbl {
+    font-size: 0.74rem;
+    color: var(--text-muted);
+}
+
+/* 2-Column Panels */
+.yt-dash-2col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.yt-dash-panel {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 8px rgba(44, 26, 14, 0.02);
+}
+
+.yt-dash-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.yt-dash-panel-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.yt-dash-panel-link {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.yt-dash-panel-link:hover {
+    color: var(--brand-terracotta);
+}
+
+/* Recent Bookings List */
+.yt-dash-booking-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #F5EFEB;
+}
+
+.yt-dash-booking-row:last-child {
+    border-bottom: none;
+}
+
+.yt-dash-booking-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.yt-dash-booking-sub {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.yt-dash-booking-price {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: right;
+    margin-bottom: 2px;
+}
+
+.yt-dash-badge {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.yt-dash-badge.confirmed {
+    color: #237844;
+}
+
+.yt-dash-badge.pending {
+    color: #D46B08;
+}
+
+/* Hotels List */
+.yt-dash-hotel-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #F5EFEB;
+}
+
+.yt-dash-hotel-row:last-child {
+    border-bottom: none;
+}
+
+.yt-dash-hotel-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.yt-dash-hotel-thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.yt-dash-hotel-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.yt-dash-hotel-loc {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.yt-dash-hotel-price {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Warning Banner */
+.yt-dash-alert-banner {
+    background-color: #FEFBE8;
+    border: 1px solid #FDE68A;
+    border-radius: 12px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yt-dash-alert-left {
+    color: #92400E;
+    font-size: 0.82rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yt-dash-alert-btn {
+    color: #92400E;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.yt-dash-alert-btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .yt-dash-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .yt-dash-2col-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================================================
+   ADMIN MANAGE HOTELS PAGE STYLES (MATCHING FIGMA SCREENSHOT EXACTLY)
+   ========================================================================== */
+
+.yt-admin-hotels-page {
+    background-color: #FAF7F2;
+    min-height: calc(100vh - 64px);
+    padding: 36px 0 60px 0;
+}
+
+.yt-admin-hotels-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Page Top Header */
+.yt-admin-hotels-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.yt-admin-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #2C1A0E;
+    margin: 0 0 2px 0;
+}
+
+.yt-admin-sub {
+    font-size: 0.84rem;
+    color: #7A6B60;
+    margin: 0;
+}
+
+.yt-admin-btn-primary {
+    background-color: #A0522D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.yt-admin-btn-primary:hover {
+    background-color: #8A4322;
+    color: #FFFFFF;
+}
+
+/* Form Card (Add/Edit Hotel) */
+.yt-admin-card {
+    background: #FFFFFF;
+    border: 1px solid #EBE4DD;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.yt-admin-card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2C1A0E;
+    margin-bottom: 18px;
+}
+
+.yt-admin-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+}
+
+.yt-admin-form-full {
+    grid-column: span 2;
+}
+
+.yt-admin-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.yt-admin-field label {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: #7A6B60;
+}
+
+.yt-admin-input {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E5DDD5;
+    border-radius: 8px;
+    padding: 0 14px;
+    font-size: 0.85rem;
+    color: #2C1A0E;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.yt-admin-input:focus {
+    border-color: #A0522D;
+}
+
+.yt-admin-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: #2C1A0E;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.yt-admin-form-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.yt-admin-btn-save {
+    background-color: #A0522D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 24px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.yt-admin-btn-cancel {
+    background-color: #FFFFFF;
+    color: #555555;
+    border: 1px solid #D9D1C9;
+    border-radius: 9999px;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Table Card */
+.yt-admin-table-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.yt-admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.yt-admin-table th {
+    background-color: #FFFFFF;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #8C7C71;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #EBE4DD;
+}
+
+.yt-admin-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #F2ECE5;
+    vertical-align: middle;
+    font-size: 0.82rem;
+}
+
+.yt-admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hotel Cell */
+.yt-hotel-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.yt-hotel-thumb {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.yt-hotel-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-hotel-name {
+    font-weight: 600;
+    color: #2C1A0E;
+    font-size: 0.84rem;
+}
+
+.yt-hotel-loc {
+    font-size: 0.74rem;
+    color: #8C7C71;
+}
+
+/* Badges */
+.yt-cat-badge {
+    display: inline-block;
+    background-color: #F4EFEA;
+    color: #5A4E45;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 9999px;
+}
+
+.yt-price-val {
+    font-weight: 600;
+    color: #2C1A0E;
+}
+
+.yt-star-rating {
+    color: #E59819;
+    font-size: 0.76rem;
+    letter-spacing: 1px;
+}
+
+.yt-rating-val {
+    color: #2C1A0E;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.yt-status-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 9999px;
+}
+
+.yt-status-badge.available {
+    background-color: #D9F7E5;
+    color: #237844;
+}
+
+.yt-status-badge.unavailable {
+    background-color: #FFE6E6;
+    color: #D32F2F;
+}
+
+/* Actions */
+.yt-act-edit {
+    color: #666666;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.yt-act-edit:hover {
+    color: #2C1A0E;
+}
+
+.yt-act-delete {
+    color: #D32F2F;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.yt-act-delete:hover {
+    color: #9A0000;
+}

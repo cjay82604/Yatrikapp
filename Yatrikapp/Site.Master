@@ -1,0 +1,161 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Yatrikapp.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatrik - Your Perfect Indian Stay</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function toggleUserMenu() {
+            var ev = window.event;
+            if (ev && ev.stopPropagation) {
+                ev.stopPropagation();
+            }
+            var dropdown = document.getElementById("ytUserDropdown");
+            if (dropdown) {
+                dropdown.classList.toggle("show");
+            }
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener("click", function () {
+            var dropdown = document.getElementById("ytUserDropdown");
+            if (dropdown && dropdown.classList.contains("show")) {
+                dropdown.classList.remove("show");
+            }
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+
+        <!-- HEADER / NAVIGATION -->
+        <header class="yt-header">
+            <div class="yt-nav-container">
+                <!-- Logo -->
+                <a href="Default.aspx" class="yt-logo">
+                    <span class="yt-logo-badge">&#9670;</span>
+                    <span>Yatrik</span>
+                </a>
+
+                <!-- Right Nav -->
+                <div class="yt-nav-right">
+                    <nav class="yt-nav-links">
+                        <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="Default.aspx" CssClass="yt-nav-item">Home</asp:HyperLink>
+                        <asp:HyperLink ID="lnkHotels" runat="server" NavigateUrl="Hotels.aspx" CssClass="yt-nav-item">Hotels</asp:HyperLink>
+                        <asp:HyperLink ID="lnkReviews" runat="server" NavigateUrl="Reviews.aspx" CssClass="yt-nav-item">Reviews</asp:HyperLink>
+                        <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="About.aspx" CssClass="yt-nav-item">About</asp:HyperLink>
+                        <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="Contact.aspx" CssClass="yt-nav-item">Contact</asp:HyperLink>
+
+                        <!-- LOGGED-IN LINKS (SAVED & MY TRIPS) -->
+                        <asp:PlaceHolder ID="phLoggedInNav" runat="server" Visible="false">
+                            <asp:HyperLink ID="lnkSaved" runat="server" NavigateUrl="Saved.aspx" CssClass="yt-nav-saved">&#9825; Saved</asp:HyperLink>
+                            <asp:HyperLink ID="lnkMyTrips" runat="server" NavigateUrl="MyTrips.aspx" CssClass="yt-nav-item">My Trips</asp:HyperLink>
+                        </asp:PlaceHolder>
+                    </nav>
+
+                    <span class="yt-nav-divider">|</span>
+
+                    <!-- ANONYMOUS AUTH BUTTONS -->
+                    <asp:PlaceHolder ID="phAnonymous" runat="server">
+                        <div class="yt-auth-links">
+                            <a href="Login.aspx" class="yt-btn-signin">Sign in</a>
+                            <a href="Register.aspx" class="yt-btn-register">Register</a>
+                            <a href="Admin.aspx" class="yt-btn-admin">Admin</a>
+                        </div>
+                    </asp:PlaceHolder>
+
+                    <!-- LOGGED-IN USER AVATAR & DROPDOWN -->
+                    <asp:PlaceHolder ID="phLoggedInUser" runat="server" Visible="false">
+                        <div class="yt-user-menu-wrapper">
+                            <button type="button" class="yt-user-avatar-btn" onclick="toggleUserMenu()">
+                                <span class="yt-avatar-circle">
+                                    <asp:Literal ID="litUserInitials" runat="server">AS</asp:Literal>
+                                </span>
+                                <span class="yt-avatar-arrow">&#9662;</span>
+                            </button>
+
+                            <!-- Profile Dropdown Menu -->
+                            <div id="ytUserDropdown" class="yt-user-dropdown" onclick="event.stopPropagation();">
+                                <div class="yt-dropdown-userinfo">
+                                    <div class="yt-dropdown-name">
+                                        <asp:Literal ID="litUserName" runat="server">Arjun Sharma</asp:Literal>
+                                    </div>
+                                    <div class="yt-dropdown-email">
+                                        <asp:Literal ID="litUserEmail" runat="server">you@example.com</asp:Literal>
+                                    </div>
+                                </div>
+                                <hr class="yt-dropdown-divider" />
+                                <a href="Profile.aspx" class="yt-dropdown-item">My Profile</a>
+                                <a href="MyTrips.aspx" class="yt-dropdown-item">My Trips</a>
+                                <a href="Saved.aspx" class="yt-dropdown-item">Saved Hotels</a>
+                                <hr class="yt-dropdown-divider" />
+                                <a href="Admin.aspx" class="yt-dropdown-item">Admin portal</a>
+                                <asp:LinkButton ID="btnSignOut" runat="server" CssClass="yt-dropdown-item yt-signout" OnClick="btnSignOut_Click">Sign out</asp:LinkButton>
+                            </div>
+                        </div>
+                    </asp:PlaceHolder>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN PAGE CONTENT -->
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <!-- CREAM STRIP -->
+        <div class="yt-divider-strip"></div>
+
+        <!-- FOOTER -->
+        <footer class="yt-footer">
+            <div class="yt-footer-container">
+                <div class="yt-footer-top">
+                    <div class="yt-footer-brand">
+                        <div class="yt-logo">
+                            <span class="yt-logo-badge">&#9670;</span>
+                            <span>Yatrik</span>
+                        </div>
+                        <p class="yt-footer-brand-desc">
+                            Curated hotel stays across India. Book with confidence, travel with joy.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="yt-footer-col-title">EXPLORE</div>
+                        <ul class="yt-footer-links">
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="Hotels.aspx">All Hotels</a></li>
+                            <li><a href="Reviews.aspx">Reviews</a></li>
+                            <li><a href="About.aspx">About Us</a></li>
+                            <li><a href="Contact.aspx">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="yt-footer-col-title">SUPPORT</div>
+                        <ul class="yt-footer-links">
+                            <li><a href="#">Help Centre</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="yt-footer-bottom">
+                    <span>&copy; 2026 Yatrik. All rights reserved.</span>
+                    <span>Made with &#9829; for Indian travellers</span>
+                </div>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>

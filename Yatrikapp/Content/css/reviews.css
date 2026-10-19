@@ -1,0 +1,278 @@
+﻿/* ==========================================================
+   YATRIK - REVIEWS PAGE STYLES
+   ========================================================== */
+.yt-reviews-page {
+    background-color: var(--bg-page);
+    padding: 24px 0 70px 0;
+    min-height: calc(100vh - 120px);
+}
+
+.yt-reviews-container {
+    max-width: 680px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.yt-reviews-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.yt-btn-toggle-form {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF !important;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.yt-btn-toggle-form:hover {
+    opacity: 0.9;
+}
+
+/* Card 1: Share Your Stay Form Card */
+.yt-review-form-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+}
+
+.yt-review-form-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.yt-review-form-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+/* Star Rating Selector */
+.yt-rating-stars-input {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.35rem;
+    color: var(--brand-terracotta);
+    cursor: pointer;
+    user-select: none;
+}
+
+.yt-rating-star {
+    transition: transform 0.1s;
+}
+
+.yt-rating-star:hover {
+    transform: scale(1.15);
+}
+
+.yt-btn-submit-review {
+    background-color: #E6DDD3;
+    color: #554438;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 22px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.2s;
+}
+
+.yt-btn-submit-review:hover,
+.yt-btn-submit-review.active {
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+}
+
+/* Card 2: Rating Score Summary Card */
+.yt-review-summary-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.yt-summary-score-side {
+    text-align: center;
+    min-width: 90px;
+}
+
+.yt-summary-big-score {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.yt-summary-stars {
+    color: var(--brand-terracotta);
+    font-size: 0.85rem;
+    letter-spacing: -1px;
+}
+
+.yt-summary-count {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* Progress Bars */
+.yt-rating-bars-side {
+    flex: 1;
+}
+
+.yt-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    color: #6C5D53;
+    margin-bottom: 6px;
+}
+
+.yt-bar-row:last-child {
+    margin-bottom: 0;
+}
+
+.yt-bar-track {
+    flex: 1;
+    height: 5px;
+    background-color: #F0EAE0;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.yt-bar-fill {
+    height: 100%;
+    background-color: var(--brand-terracotta);
+    border-radius: 9999px;
+}
+
+.yt-bar-num {
+    min-width: 14px;
+    text-align: right;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+/* Card 3: Individual Review Cards */
+.yt-user-review-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.yt-ur-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.yt-ur-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: var(--brand-terracotta);
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.yt-ur-name {
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yt-ur-stars {
+    color: var(--brand-terracotta);
+    font-size: 0.78rem;
+    letter-spacing: -1px;
+}
+
+.yt-ur-date {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 1px;
+}
+
+.yt-ur-hotel-tag {
+    font-size: 0.74rem;
+    color: #7B6E65;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.yt-ur-text {
+    font-size: 0.8rem;
+    color: #4A3B30;
+    line-height: 1.55;
+    margin-bottom: 12px;
+}
+
+.yt-btn-helpful {
+    background-color: #FAF7F2;
+    border: 1px solid #E5DDD5;
+    color: #554438;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.yt-btn-helpful:hover {
+    border-color: #C0B5A8;
+    color: var(--text-primary);
+}
+
+/* Green Admin Approval Notice */
+.yt-approval-banner {
+    background-color: #EBF9F1;
+    border: 1px solid #D2F2E1;
+    color: #237844;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}

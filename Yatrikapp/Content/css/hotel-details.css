@@ -1,0 +1,289 @@
+﻿/* ==========================================================
+   YATRIK - HOTEL DETAILS PAGE STYLES
+   ========================================================== */
+.yt-details-page {
+    background-color: var(--bg-page);
+    padding: 24px 0 60px 0;
+}
+
+.yt-details-container {
+    max-width: 1140px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.yt-back-link {
+    display: inline-block;
+    color: #554438;
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.yt-back-link:hover {
+    color: var(--brand-terracotta);
+}
+
+/* 2-Column Details Layout (Left: 66%, Right: 34%) */
+.yt-details-layout {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 36px;
+    align-items: start;
+}
+
+/* Image Gallery */
+.yt-gallery-main {
+    width: 100%;
+    height: 360px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.yt-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yt-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.yt-gallery-thumb-item {
+    height: 95px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.yt-gallery-thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hotel Header Information */
+.yt-details-badge {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: var(--text-primary);
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 9999px;
+    border: 1px solid var(--border-light);
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.yt-details-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.yt-details-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.yt-details-loc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.yt-details-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.76rem;
+}
+
+.yt-details-price-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: right;
+}
+
+.yt-fav-circle-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C5D53;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.yt-details-price {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--brand-terracotta);
+    line-height: 1.1;
+}
+
+.yt-details-price small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.yt-details-divider {
+    border: none;
+    border-top: 1px solid #ECE4DA;
+    margin: 20px 0;
+}
+
+/* About & Amenities Sections */
+.yt-details-subheading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.yt-details-desc {
+    color: #554438;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.yt-amenities-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.yt-amenity-pill {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    color: #554438;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 9999px;
+}
+
+/* Right Sticky Booking Card */
+.yt-booking-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 22px 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+}
+
+.yt-booking-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.yt-booking-sub {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.yt-booking-field {
+    margin-bottom: 12px;
+}
+
+.yt-booking-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.yt-booking-input {
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid #E5DDD5;
+    padding: 0 12px;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    outline: none;
+}
+
+.yt-booking-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+/* Price Calculation Breakdown */
+.yt-price-breakdown {
+    border-top: 1px solid #F0EAE0;
+    padding-top: 14px;
+    margin-bottom: 16px;
+    font-size: 0.78rem;
+}
+
+.yt-price-line {
+    display: flex;
+    justify-content: space-between;
+    color: #554438;
+    margin-bottom: 6px;
+}
+
+.yt-price-line.total {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #F0EAE0;
+}
+
+/* Booking Features List */
+.yt-booking-features {
+    list-style: none;
+    margin-top: 14px;
+}
+
+.yt-booking-features li {
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.yt-booking-features li::before {
+    content: "✓";
+    color: #2B8A3E;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .yt-details-layout {
+        grid-template-columns: 1fr;
+    }
+}

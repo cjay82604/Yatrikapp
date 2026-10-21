@@ -113,7 +113,11 @@
                         <div id="adminDropdownMenu" class="yt-admin-dropdown-menu">
                             <div class="yt-admin-dd-header">
                                 <div class="yt-admin-dd-name">Admin User</div>
+<<<<<<< HEAD
                                 <div class="yt-admin-dd-email">ibharmal793@university.edu</div>
+=======
+                                <div class="yt-admin-dd-email">admin@yatrik.in</div>
+>>>>>>> 8c058e2c69959a48730eb36c04586dbc3e20f10d
                             </div>
                             <div class="yt-admin-dd-divider"></div>
                             <a href="AdminProfile.aspx" class="yt-admin-dd-item">My Profile</a>

@@ -53,7 +53,11 @@
                         <label class="yt-admin-label" style="margin: 0;">Password <span class="yt-req">*</span></label>
                         <a href="javascript:void(0);" onclick="alert('Demo password: any 4+ characters (e.g. admin123)');" class="yt-admin-forgot">Forgot?</a>
                     </div>
+<<<<<<< HEAD
                     <asp:TextBox ID="txtPassword" runat="server" CssClass="yt-admin-input" TextMode="Password" placeholder="••••••••" />
+=======
+                    <asp:TextBox ID="txtPassword" runat="server" CssClass="yt-admin-input" TextMode="Password" placeholder="Min 4 characters" />
+>>>>>>> 8c058e2c69959a48730eb36c04586dbc3e20f10d
 
                     <!-- Demo Helper Notice -->
                     <div class="yt-admin-demo-box">

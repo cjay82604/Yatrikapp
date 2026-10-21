@@ -104,7 +104,7 @@
                                 <div class="yt-admin-dd-email">ibharmal793@university.edu</div>
                             </div>
                             <div class="yt-admin-dd-divider"></div>
-                            <a href="Profile.aspx" class="yt-admin-dd-item">My Profile</a>
+                            <a href="AdminProfile.aspx" class="yt-admin-dd-item">My Profile</a>
                             <a href="Default.aspx" class="yt-admin-dd-item">View Website</a>
                             <div class="yt-admin-dd-divider"></div>
                             <a href="Admin.aspx" class="yt-admin-dd-item yt-admin-dd-signout">Sign out</a>
